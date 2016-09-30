@@ -22,6 +22,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':javajoke')
     compile 'com.android.support:appcompat-v7:24.1.1'
     // Added for AdMob
     compile 'com.google.android.gms:play-services-ads:9.4.0'
