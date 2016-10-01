@@ -15,6 +15,8 @@ import com.example.androidlibrary.JokeViewActivity;
 
 public class MainActivity extends AppCompatActivity implements JokeFetchListener{
 
+    private View button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements JokeFetchListener
     }
 
     public void tellJoke(View view) {
+        button = view;
+        view.setEnabled(false);
         new JokeFetchAsyncTask(this).execute();
 
     }
@@ -52,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements JokeFetchListener
 
     @Override
     public void onJokeFetch(String joke) {
+        if (button != null) {
+            button.setEnabled(true);
+        }
         Intent intent = new Intent(this, JokeViewActivity.class);
         intent.putExtra(Extra.EXTRA_TEXT, joke);
         startActivity(intent);
