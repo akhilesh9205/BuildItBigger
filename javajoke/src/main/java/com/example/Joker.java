@@ -16,7 +16,7 @@ public class Joker {
             "There are only 10 kinds of people in this world: those who know binary and those who don't.",
             "\"Knock, knock.\"\n" +
                     "\"Who's there?\"\n" +
-                    "very long pause….\n" +
+                    "very long pause...\n" +
                     "\"Java.\""
     };
     private Random random;
