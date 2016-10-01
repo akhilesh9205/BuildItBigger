@@ -3,11 +3,10 @@
     package="com.example.androidlibrary">
 
     <application
-        android:label="@string/app_name"
         android:supportsRtl="true">
         <activity
             android:name=".JokeViewActivity"
-            android:label="@string/app_name" />
+            android:label="@string/joke_view" />
     </application>
 
 </manifest>
