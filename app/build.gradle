@@ -22,7 +22,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':javajoke')
     compile project(':androidlibrary')
     // Added for AdMob
     compile 'com.android.support:appcompat-v7:24.2.1'

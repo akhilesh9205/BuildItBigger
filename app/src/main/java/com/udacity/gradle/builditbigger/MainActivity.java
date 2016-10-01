@@ -6,9 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.example.Joker;
 import com.example.androidlibrary.Extra;
 import com.example.androidlibrary.JokeViewActivity;
 
@@ -45,8 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        Joker joker = new Joker();
-        String joke = joker.tellJoke();
+        String joke = "";
         Intent intent = new Intent(this, JokeViewActivity.class);
         intent.putExtra(Extra.EXTRA_TEXT, joke);
         startActivity(intent);
